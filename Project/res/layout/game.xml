@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/blank_chalkboard_background">
+
+    <TextView
+        android:id="@+id/texttest_EMH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+      <TextView
+        android:id="@+id/viewEquation3_EMH"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewEquation4_EMH"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Equation 3"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/viewEquation1_EMH"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewEquation2_EMH"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Equation 1"
+        android:textSize="35sp" 
+        android:background="@drawable/circle"/>
+    
+     <TextView
+        android:id="@+id/viewLastEquation_EMH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewEquation1_EMH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="35sp" />
+
+     <Button
+         android:id="@+id/buttonFalse_EMH"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="28dp"
+         android:layout_toRightOf="@+id/texttest_EMH"
+         android:text="False"
+         android:textSize="40sp" 
+         android:layout_marginRight="20dp"
+         android:background="@drawable/false_background"/>
+
+     <Button
+         android:id="@+id/buttonTrue_EMH"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/buttonFalse_EMH"
+         android:layout_alignBottom="@+id/buttonFalse_EMH"
+         android:layout_toLeftOf="@+id/texttest_EMH"
+         android:text="True"
+         android:textSize="40sp"
+       	 android:layout_marginLeft="20dp" 
+       	 android:background="@drawable/true_background"/>
+
+     <TextView
+         android:id="@+id/viewEquation4_EMH"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/buttonFalse_EMH"
+         android:layout_alignParentLeft="true"
+         android:gravity="center"
+         android:text="Equation 4"
+         android:textSize="35sp" />
+
+     <Chronometer
+         android:id="@+id/timerEMH"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="20dp"
+         android:textSize="25sp" />
+
+     <ImageView
+         android:id="@+id/imageView_EMH"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="35dp"
+         android:layout_alignTop="@+id/viewLastEquation_EMH"/>
+
+     <TextView
+         android:id="@+id/viewEquation2_EMH"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/viewEquation3_EMH"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="8dp"
+         android:gravity="center"
+         android:text="Equation 2"
+         android:textSize="35sp" />
+
+</RelativeLayout>

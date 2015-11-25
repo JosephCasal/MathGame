@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/blank_chalkboard_background">
+
+    <TextView
+        android:id="@+id/textViewHighScores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="High Scores" 
+        android:textSize="55sp"/>
+    
+    <TextView
+        android:id="@+id/textViewEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewHighScores"
+        android:layout_marginLeft="20dp"
+        android:text="Easy" 
+        android:textSize="35sp"/>
+    
+    <TextView
+        android:id="@+id/textViewMeduim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewEasy"
+        android:layout_marginLeft="20dp"
+        android:text="Meduim" 
+        android:textSize="35sp"/>
+    
+    <TextView
+        android:id="@+id/textViewHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewMeduim"
+        android:layout_marginLeft="20dp"
+        android:text="Hard" 
+        android:textSize="35sp"/>
+    
+    <TextView
+        android:id="@+id/textViewChallenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewHard"
+        android:layout_marginLeft="20dp"
+        android:text="Challenge" 
+        android:textSize="35sp"/>
+    
+    <TextView
+        android:id="@+id/textViewScoreEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewEasy"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Empty" 
+        android:textSize="35sp"/>
+    
+    <TextView
+        android:id="@+id/textViewScoreMeduim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewMeduim"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Empty" 
+        android:textSize="35sp"/>
+    
+    <TextView
+        android:id="@+id/textViewScoreHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewHard"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Empty" 
+        android:textSize="35sp"/>
+    
+    <TextView
+        android:id="@+id/textViewScoreChallenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewChallenge"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Empty" 
+        android:textSize="35sp"/>
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="35dp"
+        android:text="Delete\nScores" 
+        android:textSize="35sp"
+        android:background="@null"/>
+    
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/blank_chalkboard_background">
+
+    <Button
+        android:id="@+id/buttonTrue_Practice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_toLeftOf="@+id/texttest_Practice"
+        android:text="True" 
+        android:textSize="40sp"
+         android:layout_marginLeft="20dp" 
+        android:background="@drawable/true_background"/>
+
+    <Button
+        android:id="@+id/buttonFalse_Practice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_toRightOf="@+id/texttest_Practice"
+        android:text="False" 
+        android:textSize="40sp"
+         android:layout_marginRight="20dp"
+        android:background="@drawable/false_background"/>
+
+    <TextView
+        android:id="@+id/texttest_Practice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/viewEquation4_Practice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonTrue_Practice"
+        android:text="Equation 4"
+        android:textSize="35sp"
+        android:gravity="center"/>
+
+      <TextView
+        android:id="@+id/viewEquation3_Practice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewEquation4_Practice"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Equation 3"
+        android:textSize="35sp" />
+      
+    <TextView
+        android:id="@+id/viewEquation2_Practice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewEquation3_Practice"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Equation 2"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/viewEquation1_Practice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewEquation2_Practice"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Equation 1"
+        android:textSize="35sp" 
+        android:background="@drawable/circle"/>
+    
+     <TextView
+        android:id="@+id/viewLastEquation_Practice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewEquation1_Practice"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="35sp" />
+     
+     <Button
+        android:id="@+id/buttonMenu_Practice"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toLeftOf="@+id/texttest_Practice"
+        android:gravity="center"
+        android:text="Menu" 
+        android:textSize="25sp"
+        android:background="@drawable/back_menu_practice"/>
+     
+     <TextView
+        android:id="@+id/viewPercentRight_Practice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight= "20dp"
+        android:layout_alignParentRight="true"
+        android:text="100%"
+        android:textSize="25sp" />
+     
+     <ImageView
+         android:id="@+id/imageView_Practice"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="80dp"/>
+
+     
+
+</RelativeLayout>

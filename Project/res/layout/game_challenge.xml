@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/blank_chalkboard_background">
+
+    <Button
+        android:id="@+id/buttonTrue_Challenge"
+           android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/buttonFalse_Challenge"
+         android:layout_alignBottom="@+id/buttonFalse_Challenge"
+         android:layout_toLeftOf="@+id/texttest_Challenge"
+         android:text="True"
+         android:textSize="40sp"
+       	 android:layout_marginLeft="20dp" 
+       	 android:background="@drawable/true_background" />
+
+    <Button
+        android:id="@+id/buttonFalse_Challenge"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="28dp"
+         android:layout_toRightOf="@+id/texttest_Challenge"
+         android:text="False"
+         android:textSize="40sp" 
+         android:layout_marginRight="20dp"
+         android:background="@drawable/false_background"/>
+
+    <TextView
+        android:id="@+id/texttest_Challenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/viewEquation4_Challenge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonTrue_Challenge"
+        android:gravity="center"
+        android:text="Equation 4"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/viewEquation3_Challenge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewEquation4_Challenge"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Equation 3"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/viewEquation2_Challenge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewEquation3_Challenge"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Equation 2"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/viewLastEquation_Challenge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewEquation1_Challenge"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="35sp" />
+    
+          <TextView
+          android:id="@+id/viewEquation1_Challenge"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/viewEquation2_Challenge"
+          android:gravity="center"
+          android:text="Equation 1"
+          android:layout_marginBottom="8dp"
+          android:textSize="35sp" 
+          android:background="@drawable/circle"/>
+
+    <TextView
+        android:id="@+id/countDownChallenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight= "20dp"
+        android:layout_alignParentRight="true"
+        android:textSize="25sp"
+        android:text="0.0" />
+
+    <TextView
+        android:id="@+id/textViewStrick1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="" 
+        android:background="@drawable/green_apple"
+        android:layout_marginTop="30dp"/>
+     <TextView
+        android:id="@+id/textViewStrick2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:text=""
+        android:background="@drawable/green_apple"
+        android:layout_marginTop="30dp" />
+     
+      <TextView
+        android:id="@+id/textViewStrick3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp"
+        android:text="" 
+        android:background="@drawable/green_apple"
+        android:layout_marginTop="30dp"/>
+      
+          <ImageView
+         android:id="@+id/imageView_Challenge"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="80dp"/>
+
+
+
+</RelativeLayout>

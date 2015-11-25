@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/blank_chalkboard_background">
+
+    <TextView
+        android:id="@+id/textViewOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Practice Options" 
+        android:textSize="40sp"/>
+    
+    <CheckBox
+        android:id="@+id/checkBoxAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewOptions"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Addition" 
+        android:textSize="20sp"/>
+    
+    <CheckBox
+        android:id="@+id/checkBoxSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxAdd"
+        android:layout_marginLeft="10dp"
+        android:text="Subtraction"
+        android:textSize="20sp"/>
+    
+    <CheckBox
+        android:id="@+id/checkBoxMul"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxSub"
+        android:layout_marginLeft="10dp"
+        android:text="Multiplication"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxDiv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxMul"
+        android:layout_marginLeft="10dp"
+        android:text="Division"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textViewFrom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxAdd"
+        android:layout_centerHorizontal="true"
+        android:text="From" 
+        android:textSize="20sp"/>
+    
+    <EditText
+        android:id="@+id/editAddMin"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxAdd"
+        android:layout_toRightOf="@+id/textViewFrom1"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="27sp" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textViewTo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editAddMin"
+        android:layout_alignTop="@+id/checkBoxAdd"
+        android:text="To" 
+        android:textSize="20sp"/>
+    
+    <EditText
+        android:id="@+id/editAddMax"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewTo1"
+        android:layout_alignTop="@+id/checkBoxAdd"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="27sp">
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textViewFrom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFrom1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/checkBoxSub"
+        android:text="From" 
+        android:textSize="20sp"/>
+    
+    <EditText
+        android:id="@+id/editSubMin"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewFrom2"
+        android:layout_alignTop="@+id/checkBoxSub"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="27sp">
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textViewTo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editSubMin"
+        android:layout_alignTop="@+id/checkBoxSub"
+        android:text="To" 
+        android:textSize="20sp"/>
+    
+    <EditText
+        android:id="@+id/editSubMax"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewTo2"
+        android:layout_alignTop="@+id/checkBoxSub"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="27sp">
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textViewFrom3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFrom2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/checkBoxMul"
+        android:text="From" 
+        android:textSize="20sp"/>
+    
+    <EditText
+        android:id="@+id/editMulMin"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewFrom3"
+        android:layout_alignTop="@+id/checkBoxMul"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="27sp">
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textViewTo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editMulMin"
+        android:layout_alignTop="@+id/checkBoxMul"
+        android:text="To" 
+        android:textSize="20sp"/>
+    
+    <EditText
+        android:id="@+id/editMulMax"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewTo3"
+        android:layout_alignTop="@+id/checkBoxMul"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="27sp">
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textViewFrom4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFrom3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/checkBoxDiv"
+        android:text="From" 
+        android:textSize="20sp"/>
+    
+    <EditText
+        android:id="@+id/editDivMin"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewFrom4"
+        android:layout_alignTop="@+id/checkBoxDiv"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="27sp">
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textViewTo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editDivMin"
+        android:layout_alignTop="@+id/checkBoxDiv"
+        android:text="To" 
+        android:textSize="20sp"/>
+    
+    <EditText
+        android:id="@+id/editDivMax"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewTo4"
+        android:layout_alignTop="@+id/checkBoxDiv"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="27sp">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDivMin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Done" 
+        android:textSize="40sp"
+        android:background="@null"/>
+
+    <Button
+        android:id="@+id/buttonDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDivMin"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="45dp"
+        android:text="Default\nOptions" 
+        android:textSize="40sp"
+        android:background="@null"/>
+    
+</RelativeLayout>
